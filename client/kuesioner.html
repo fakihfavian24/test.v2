@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPD</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="img/logo-banten.png" alt="">
+        <h3 class="logo-text">BADAN PENDAPATAN DAERAH</h3>
+      </div>
+
+      <div class="header-left">
+        <h3>
+          <span>Optimal Pendapatan</span>
+          <span>Maksimal Pelayanan</span>
+        </h3>
+      </div>
+    </nav>
+
+    <hr class="hr">
+
+    <div class="card-survey" id="question1">
+      <h2>1. Bagaimana pendapat Saudara tentang kesesuaian persyaratan pelayanan dengan jenis pelayanannya</h2>
+
+      <div class="rating">
+        <ul>
+          <label>
+            <input type="radio" id="Tidak sesuai" value="Tidak sesuai" name="rating" />
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="text" style="font-size: 20px; margin-left: 10px;">Tidak sesuai</span>
+          </label>
+        </ul>
+
+        <ul>
+          <label>
+            <input type="radio" id="Kurang sesuai" value="Kurang sesuai" name="rating" />
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="text" style="font-size: 20px; margin-left: 10px;">Kurang sesuai</span>
+          </label>
+        </ul>
+
+        <ul>
+          <label>
+            <input type="radio" id="Sesuai" value="Sesuai" name="rating" />
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="text" style="font-size: 20px; margin-left: 10px;">Sesuai</span>
+          </label>
+        </ul>
+
+        <ul>
+          <label>
+            <input type="radio" id="Sangat sesuai" value="Sangat sesuai" name="rating" />
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="text" style="font-size: 20px; margin-left: 10px;">Sangat sesuai</span>
+          </label>
+        </ul>
+      </div>
+
+      <div class="navigation-button">
+        <a href="" class="previous" onclick="previousQuestion('question1', event)">Previous</a>
+        <a href="" class="next" onclick="nextQuestion('question2', event)">Next</a>
+      </div>
+
+    </div>
+
+    <div class="card-survey" id="question2" style="display: none;">
+      <h2>2. Pertanyaan kedua</h2>
+
+      <div class="rating">
+        <ul>
+          <label>
+            <input type="radio" id="Tidak sesuai" value="Tidak sesuai" name="rating" />
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="text" style="font-size: 20px; margin-left: 10px;">Tidak sesuai</span>
+          </label>
+        </ul>
+
+        <ul>
+          <label>
+            <input type="radio" id="Kurang sesuai" value="Kurang sesuai" name="rating" />
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="text" style="font-size: 20px; margin-left: 10px;">Kurang sesuai</span>
+          </label>
+        </ul>
+
+        <ul>
+          <label>
+            <input type="radio" id="Sesuai" value="Sesuai" name="rating" />
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="text" style="font-size: 20px; margin-left: 10px;">Sesuai</span>
+          </label>
+        </ul>
+
+        <ul>
+          <label>
+            <input type="radio" id="Sangat sesuai" value="Sangat sesuai" name="rating" />
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="icon" style="font-size: 20px;">★</span>
+            <span class="text" style="font-size: 20px; margin-left: 10px;">Sangat sesuai</span>
+          </label>
+        </ul>
+      </div>
+
+      <div class="navigation-button">
+        <a href="" class="previous" onclick="previousQuestion('question1', event)">Previous</a>
+        <a href="" class="next" onclick="nextQuestion('question3', event)">Next</a>
+      </div>
+
+    </div>
+
+    <!-- Dan seterusnya untuk setiap pertanyaan -->
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
